@@ -13,7 +13,7 @@
         private $conn;
 
         function conDat(){
-            $dataBase = new jingxuan\config\dataBaseInfo();
+            $dataBase = new jingxuan\con fig\dataBaseInfo();
             //  数据库操作
             $this->conn = mysqli_connect($dataBase->configDatabase()[0], $dataBase->configDatabase()[1], $dataBase->configDatabase()[2], $dataBase->configDatabase()[3]);
             if (!$this->conn) {
