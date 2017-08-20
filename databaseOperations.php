@@ -3,7 +3,8 @@
  * Created by PhpStorm.
  * User: dev
  * Date: 2017/7/31
- * Time: 下午12:23
+ * Time: 下午12:2
+ceshi 3
  */
 
 
@@ -13,7 +14,7 @@
         private $conn;
 
         function conDat(){
-            $dataBase = new jingxuan\con fig\dataBaseInfo();
+            $dataBase = new jingxuan\con  fig\dataBaseInfo();
             //  数据库操作
             $this->conn = mysqli_connect($dataBase->configDatabase()[0], $dataBase->configDatabase()[1], $dataBase->configDatabase()[2], $dataBase->configDatabase()[3]);
             if (!$this->conn) {
