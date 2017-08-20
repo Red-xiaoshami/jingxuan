@@ -12,12 +12,12 @@
     class doSql{
         private $conn;
 
-        function conDatabase(){
-            $dataBase = new jingxuan\config\dataBase();
+        function conDat(){
+            $dataBase = new jingxuan\config\dataBaseInfo();
             //  数据库操作
             $this->conn = mysqli_connect($dataBase->configDatabase()[0], $dataBase->configDatabase()[1], $dataBase->configDatabase()[2], $dataBase->configDatabase()[3]);
             if (!$this->conn) {
-                die("连接失败: " . mysqli_connect_error());
+                die("连接失败le: " . mysqli_connect_error());
             }
             echo "数据库连接成功</br>";
         }
