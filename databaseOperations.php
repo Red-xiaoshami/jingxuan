@@ -5,6 +5,8 @@
  * Date: 2017/7/31
  * Time: 下午12:23
  */
+
+
     require dirname(__FILE__) . '/../config/database.php';
 
     class doSql{
